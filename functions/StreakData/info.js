@@ -1,6 +1,6 @@
 const infoStreak = (chatId, bot, Streak) => {
-  bot.sendMessage(chatId, 'I will show you an information about your streak?\n what is the name of streak');
   bot.once('message', async (msg) => {
+    bot.sendMessage(chatId, 'I will show you an information about your streak?\n what is the name of streak');
     const streakName = msg.text.trim();
 
     // find the streak in the database
